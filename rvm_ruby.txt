@@ -1,0 +1,16 @@
+//https://rvm.io/
+
+//https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/nginx/oss/install_language_runtime.html#install-the-ruby-version-you-want
+
+
+rvm install ruby
+
+// the below code wont work unless you change the preferences in terminal. edit->preferences->proflies->command->check the "run command as a login shell" box. 
+rvm --default use ruby
+
+
+//will automatically install g++,gcc,sqlite3 etc 
+// to be precise gawk, g++, gcc, autoconf, automake, bison, libc6-dev, libffi-dev, libgdbm-dev, libncurses5-dev, libsqlite3-dev, libtool, libyaml-dev, make, pkg-config, sqlite3, zlib1g-dev, libgmp-dev, libreadline-dev, libssl-dev.....
+
+
+gem install bundler --no-rdoc --no-ri
