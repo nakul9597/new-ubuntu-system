@@ -1,11 +1,27 @@
-//https://rvm.io/
+# https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/nginx/oss/install_language_runtime.html#install-the-ruby-version-you-want
 
-//https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/nginx/oss/install_language_runtime.html#install-the-ruby-version-you-want
+https://github.com/rvm/ubuntu_rvm
 
+# You need software-properties-common installed in order to add PPA repositories.
+
+sudo apt-get install software-properties-common
+
+# 1. Add the PPA and install the package
+
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+
+# 2. Change your terminal window
+
+#=> At terminal window, click Edit > Profile Preferences, click on Title and Command tab and check Run command as login shell.
+
+# 3. Restart
+
+# 4. Install a ruby
 
 rvm install ruby
 
-// the below code wont work unless you change the preferences in terminal. edit->preferences->proflies->command->check the "run command as a login shell" box. 
 rvm --default use ruby
 
 
